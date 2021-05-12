@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity"
+    tools:ignore="MissingClass">
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:neomorph_view_type="rectangular"
+        app:neomorph_shadow_type="outer"
+        app:neomorph_elevation="6dp"
+        app:neomorph_corner_radius="12dp"
+        app:neomorph_background_color="#C3BEBE"
+        app:neomorph_shadow_color="@color/neomorph_shadow_color"
+        app:neomorph_highlight_color="@color/neomorph_highlight_color">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="label"
+            android:layout_gravity="bottom"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+</LinearLayout>
